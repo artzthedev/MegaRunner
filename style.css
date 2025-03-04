@@ -26,28 +26,41 @@ div {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
 }
 
-
-
-a {
+span a {
     color: #d800f9;
     text-decoration-line: none;
     transition: 0.3s;
 }
 
-a:hover {
+span a:hover {
     color: #f0ffff;
 }
+
+.title {
+    margin: 2vh 0;
+}
+
+.subt {
+    display: block;
+    margin-bottom: 1vh;
+}
+
 
 .buttonContainer {
     display: flex;
     justify-content: center;
     gap: 2vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
-button {
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration-line: none;
     font-size: 3vh;
     font-weight: 800;
     color: #00074f;
@@ -55,11 +68,13 @@ button {
     border-radius: 15px;
     width: 20vh;
     height: 5vh;
-    margin: 5vh auto 0 auto;
+    margin: auto;
     transition: 0.3s;
 }
 
-button:hover {
+.button a {}
+
+.button:hover {
     box-shadow: 0 0 0 2px rgba(249, 0, 224, 0.7);
     background-color: #feecfe;
     color: #2a1126;

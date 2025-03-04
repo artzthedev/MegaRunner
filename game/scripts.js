@@ -8,9 +8,12 @@ function jump() {
     }, 500)
 }
 
-document.addEventListener("keydown", function (event) {
-    jump();
+document.addEventListener("keydown", (event) => {
+    if (event.code === "Space") {
+        jump();
+    }
 });
+
 
 const jumpSpritesAnimation = document.getElementById("player");
 
@@ -35,12 +38,6 @@ function jump() {
             player.classList.remove("jump");
             clearInterval(spriteInterval);
             player.style.backgroundImage = "url(/chars/megaman_sprites/run1.png)";
-        }, 500);
+        }, 600);
     }
 }
-
-document.addEventListener("keydown", (event) => {
-    if (event.code === "Space") {
-        jump();
-    }
-});
