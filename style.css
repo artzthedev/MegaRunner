@@ -78,8 +78,8 @@ button:hover {
     background-image: url(/chars/megaman_sprites/run1.png);
     background-size: 50px 75px;
     position: absolute;
-    bottom: 10vh;
-    left: 10vw;
+    bottom: 0vh;
+    left: 50px;
 }
 
 .jump {
@@ -88,14 +88,14 @@ button:hover {
 
 @keyframes jump {
     0% {
-        bottom: 10vh;
+        bottom: 0vh;
     }
 
     50% {
-        bottom: 25vh;
+        bottom: 15vh;
     }
 
     100% {
-        bottom: 10vh;
+        bottom: 0vh;
     }
 }

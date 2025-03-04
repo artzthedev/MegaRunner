@@ -34,12 +34,11 @@ function jump() {
         setTimeout(() => {
             player.classList.remove("jump");
             clearInterval(spriteInterval);
-            player.style.backgroundImage = "url(/chars/megaman_sprites/run1.png)"; // Volta para a posição inicial
+            player.style.backgroundImage = "url(/chars/megaman_sprites/run1.png)";
         }, 500);
     }
 }
 
-// Faz o personagem pular quando pressiona a tecla espaço
 document.addEventListener("keydown", (event) => {
     if (event.code === "Space") {
         jump();
