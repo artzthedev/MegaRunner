@@ -69,6 +69,7 @@ button:hover {
     width: 150vh;
     height: 70vh;
     background-color: #ecedfe;
+    position: relative;
 }
 
 #player {
@@ -76,84 +77,25 @@ button:hover {
     height: 75px;
     background-image: url(/chars/megaman_sprites/run1.png);
     background-size: 50px 75px;
-    position: relative;
-    top: 60vh;
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
 }
 
 .jump {
-    animation: jump 0.5s linear;
+    animation: jump 0.6s linear;
 }
 
 @keyframes jump {
     0% {
-        top: 58vh;
-        background-image: url(/chars/megaman_sprites/jump1.png);
-        background-size: 50px 75px;
+        bottom: 10vh;
     }
 
-    7.5% {
-        top: 56vh;
-        background-image: url(/chars/megaman_sprites/jump2.png);
-        background-size: 50px 75px;
+    50% {
+        bottom: 25vh;
     }
 
-    15% {
-        top: 54vh;
-        background-image: url(/chars/megaman_sprites/jump3.png);
-        background-size: 50px 75px;
-    }
-
-    22.5% {
-        top: 52vh;
-        background-image: url(/chars/megaman_sprites/jump4.png);
-        background-size: 50px 75px;
-    }
-
-    30% {
-        top: 50vh;
-        background-image: url(/chars/megaman_sprites/jump5.png);
-        background-size: 50px 75px;
-    }
-
-    37.5% {
-        top: 48vh;
-        background-image: url(/chars/megaman_sprites/jump6.png);
-        background-size: 50px 75px;
-    }
-
-    45% {
-        top: 46vh;
-        background-image: url(/chars/megaman_sprites/jump7.png);
-        background-size: 50px 75px;
-    }
-
-    52.5% {
-        top: 48vh;
-        background-image: url(/chars/megaman_sprites/jump8.png);
-        background-size: 50px 75px;
-    }
-
-    60% {
-        top: 50vh;
-        background-image: url(/chars/megaman_sprites/jump9.png);
-        background-size: 50px 75px;
-    }
-
-    67.5% {
-        top: 53vh;
-        background-image: url(/chars/megaman_sprites/jump10.png);
-        background-size: 50px 75px;
-    }
-
-    75% {
-        top: 57vh;
-        background-image: url(/chars/megaman_sprites/jump11.png);
-        background-size: 50px 75px;
-    }
-
-    82.5% {
-        top: 60vh;
-        background-image: url(/chars/megaman_sprites/jump12.png);
-        background-size: 50px 75px;
+    100% {
+        bottom: 10vh;
     }
 }
