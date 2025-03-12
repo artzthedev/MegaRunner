@@ -88,10 +88,11 @@ span a:hover {
 }
 
 #player {
-    width: 50px;
-    height: 75px;
-    background-image: url(/chars/megaman_sprites/Megaman8/run9.png);
-    background-size: 50px 75px;
+    min-height: 90px;
+    min-width: 70px;
+    background-image: url(/chars/megaman_sprites/Megaman8/run1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     bottom: 0vh;
     left: 50px;
@@ -117,10 +118,10 @@ span a:hover {
 }
 
 .enemies {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-image: url(/chars/enemies/mettaursprites/mettaursprites-0.png);
-    background-size: 50px 50px;
+    background-size: 60px 60px;
     position: absolute;
     bottom: 0vh;
     right: 0px;
